@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+header {
+    background-color: #efdfa3;
+    border-radius: 0 0 20px 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.ashka {
+  position: relative;
+  text-decoration: none;
+  background: linear-gradient(to right, hotpink, pink); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: #352f36; 
+
+  &:hover {
+    color: rgb(241, 3, 122);
+    transition: .3s all ease;
+  }
+}
+
+.ashka:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  top: 1.4rem;
+  bottom: 0;
+  left: 0;
+  background-color: hotpink;
+  color: linear-gradient(to right, hotpink, pink);
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.ashka:hover:after {
+  visibility: visible;
+  width: 100%;
+}

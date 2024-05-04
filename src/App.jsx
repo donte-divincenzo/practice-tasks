@@ -1,14 +1,19 @@
-import Header from './components/Header/Header'
-import './App.scss'
+import Header from "./components/Header/Header";
+import "./App.scss";
+import Item from "./components/Item/Item";
+// import Sidebar from "./components/Sidebar/Sidebar";
 
 const App = () => {
   return (
-    <div className='wrapper'>
-      <h1>sum</h1>
+    <div className="wrapper">
       <Header />
-      bruh let me do sum
-    </div>
-  )
-}
+      <main className="main">
+        <Item />
+        {/* <Sidebar /> */}
 
-export default App
+      </main>
+    </div>
+  );
+};
+
+export default App;
